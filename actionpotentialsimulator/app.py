@@ -4,12 +4,12 @@ import streamlit as st
 from scipy.integrate import odeint
 from PIL import Image
 
-icon_image = Image.open("my_icon.png")
+#icon_image = Image.open("my_icon.png")
 
 
 st.set_page_config(
     page_title="Action Potential Simulation",  # Title of the browser tab
-    page_icon=icon_image,  # Icon that appears in the browser tab
+    page_icon="📊",  # Default icon
     layout="wide"  # Set the layout to wide
 )
 st.markdown("<h1 style='text-align: center;'>Action Potential Simulation (Hodgkin-Huxley Model)</h1>", unsafe_allow_html=True)

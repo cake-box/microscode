@@ -2,14 +2,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
 from scipy.integrate import odeint
-from PIL import Image
+#from PIL import Image
 
-icon_image = Image.open("my_icon.png")
+#icon_image = Image.open("my_icon.png")
 
 
 st.set_page_config(
-    page_title="Action Potential Simulation",  # Title of the browser tab
-    page_icon=icon_image,  # Icon that appears in the browser tab
+    page_title="Action Potential Simulator",  # Title of the browser tab
+    page_icon="https://github.com/cake-box/microscode/blob/test_app/actionpotentialsimulator/images/my_icon.png",  
     layout="wide"  # Set the layout to wide
 )
 st.markdown("<h1 style='text-align: center;'>Action Potential Simulation (Hodgkin-Huxley Model)</h1>", unsafe_allow_html=True)
@@ -48,7 +48,7 @@ def dVm_dt(y, t, C_m, g_Na, g_K, g_L, E_Na, E_K, E_L, I_max, t_start, t_end):
     return [dV_dt, dm_dt, dh_dt, dn_dt]
 
 # Streamlit UI
-#st.title('Action Potential Simulation (Hodgkin-Huxley Model)')
+#st.title('Action Potential Simulator (Hodgkin-Huxley Model)')
 
 col1, col2, col3 = st.columns([1,1,3])
 

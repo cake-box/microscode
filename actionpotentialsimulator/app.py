@@ -3,8 +3,14 @@ import matplotlib.pyplot as plt
 import streamlit as st
 from scipy.integrate import odeint
 from PIL import Image
+import os
 
-icon_image = Image.open("images/my_icon.png")
+# Set the file path
+icon_path = os.path.join(os.path.dirname(__file__), "images", "my_icon.png")
+
+# Open the icon
+icon_image = Image.open(icon_path)
+
 
 
 st.set_page_config(

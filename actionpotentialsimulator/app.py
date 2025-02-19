@@ -6,8 +6,8 @@ from scipy.integrate import odeint
 
 st.set_page_config(
     page_title="Action Potential Simulator",  # Title of the browser tab
-    page_icon="https://raw.githubusercontent.com/cake-box/microscode/blob/main/actionpotentialsimulator/images/my_icon.ico",  
-    layout="wide"  # Set the layout to wide
+    page_icon="🔬",  # From the default emojis list
+    layout="wide"  # Sets the app to use wide screen
 )
 st.markdown("<h1 style='text-align: center;'>Action Potential Simulator (Hodgkin-Huxley Model)</h1>", unsafe_allow_html=True)
 

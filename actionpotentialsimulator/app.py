@@ -8,7 +8,7 @@ from PIL import Image
 
 
 st.set_page_config(
-    page_title="Action Potential Simulation",  # Title of the browser tab
+    page_title="Action Potential Simulator",  # Title of the browser tab
     page_icon="📊",  # Default icon
     layout="wide"  # Set the layout to wide
 )
@@ -48,7 +48,7 @@ def dVm_dt(y, t, C_m, g_Na, g_K, g_L, E_Na, E_K, E_L, I_max, t_start, t_end):
     return [dV_dt, dm_dt, dh_dt, dn_dt]
 
 # Streamlit UI
-#st.title('Action Potential Simulation (Hodgkin-Huxley Model)')
+#st.title('Action Potential Simulator (Hodgkin-Huxley Model)')
 
 col1, col2, col3 = st.columns([1,1,3])
 

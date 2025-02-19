@@ -4,10 +4,7 @@ import streamlit as st
 from scipy.integrate import odeint
 from PIL import Image
 
-# Streamlit automatically uses the current working directory for files that are in the repository
 icon_image = Image.open("images/my_icon.png")
-
-
 
 
 st.set_page_config(

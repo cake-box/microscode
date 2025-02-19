@@ -3,13 +3,10 @@ import matplotlib.pyplot as plt
 import streamlit as st
 from scipy.integrate import odeint
 from PIL import Image
-import os
 
-# Set the file path
-icon_path = os.path.join(os.path.dirname(__file__), "images", "my_icon.png")
+# Streamlit automatically uses the current working directory for files that are in the repository
+icon_image = Image.open("images/my_icon.png")
 
-# Open the icon
-icon_image = Image.open(icon_path)
 
 
 

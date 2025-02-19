@@ -4,7 +4,7 @@ import streamlit as st
 from scipy.integrate import odeint
 from PIL import Image
 
-icon_image = Image.open("images/my_icon.png")
+icon_image = Image.open("my_icon.png")
 
 
 st.set_page_config(

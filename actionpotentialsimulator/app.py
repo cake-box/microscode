@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
 from scipy.integrate import odeint
-from PIL import Image
+#from PIL import Image
 
 #icon_image = Image.open("my_icon.png")
 

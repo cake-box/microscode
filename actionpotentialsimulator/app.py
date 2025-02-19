@@ -6,10 +6,10 @@ from scipy.integrate import odeint
 
 st.set_page_config(
     page_title="Action Potential Simulator",  # Title of the browser tab
-    page_icon="https://github.com/cake-box/microscode/blob/main/actionpotentialsimulator/images/my_icon.png",  
+    page_icon="https://raw.githubusercontent.com/cake-box/microscode/blob/main/actionpotentialsimulator/images/my_icon.png",  
     layout="wide"  # Set the layout to wide
 )
-st.markdown("<h1 style='text-align: center;'>Action Potential Simulation (Hodgkin-Huxley Model)</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Action Potential Simulator (Hodgkin-Huxley Model)</h1>", unsafe_allow_html=True)
 
 # Activation and inactivation functions
 def alpha_m(V): return 0.1 * (V + 40) / (1 - np.exp(-(V + 40) / 10))

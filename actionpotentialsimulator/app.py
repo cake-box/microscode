@@ -9,7 +9,7 @@ from PIL import Image
 
 st.set_page_config(
     page_title="Action Potential Simulator",  # Title of the browser tab
-    page_icon="📊",  # Default icon
+    page_icon="https://github.com/cake-box/microscode/blob/test_app/actionpotentialsimulator/images/my_icon.png",  
     layout="wide"  # Set the layout to wide
 )
 st.markdown("<h1 style='text-align: center;'>Action Potential Simulation (Hodgkin-Huxley Model)</h1>", unsafe_allow_html=True)
